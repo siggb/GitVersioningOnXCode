@@ -6,7 +6,7 @@ If you want to add a beauty and powerful versioning to your Mac/iOS-application 
 
 2. Set Shell line to ```/bin/sh```.
 
-3. Set contents of the gitversionning.sh to the script field. Don't forget to change Sources to your path-to-file, where GitVersion.h should be.
+3. Set contents of the gitversionning.sh (without first #-lines) to the script field. Don't forget to change Sources to your path-to-file, where GitVersion.h should be.
 
 4. Then import *.h file into the XCode-project and paste #import "GitVersion.h". Git-version string recieved with these code:
 ```objective-c
