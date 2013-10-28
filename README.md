@@ -13,3 +13,9 @@ NSString *version = [info objectForKey:@"CFBundleShortVersionString"];
 NSString *app_version = [NSString stringWithFormat:@"%@.%@", version, GIT_SHA_VERSION];
 NSLog(@"app_version : %@", app_version);
 ```
+
+For what You should add Git versioning?
+0. Every version string consists of 2 parts: Bundle Version String (from *.plist) and Git commit SHA1 (you always can find this commit in the repository timeline).
+1. You can display your unique app version on the splash screen or on the about screen.
+2. When you sending yet another build to your customers or testers, you're not afraid to get lost in application versions. Every bug or wish will be binded with signed app version.
+3. Your AppStore users can send feedbacks from the special form and every message will be signed with the unique version code.
