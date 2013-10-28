@@ -1,6 +1,6 @@
 ### Installation Guide
 
-If you want to add a beauty and powerful versioning to your Mac/iOS-application like "2.17.arfb364" - please follow these steps:
+If you want to add a beauty and powerful versioning to your Mac/iOS-application like __Version 2.17.arfb364__ - please follow these steps:
 
 1. Go to the "Build Phases" -> and choose "Add Build Phase" -> then "Add Run Script Build Phase". You can find this in the top menu - "Editor". Drag script-line to the position after "Target Dependencies".
 
@@ -15,6 +15,10 @@ NSString *version = [info objectForKey:@"CFBundleShortVersionString"];
 NSString *app_version = [NSString stringWithFormat:@"%@.%@", version, GIT_SHA_VERSION];
 NSLog(@"app_version : %@", app_version);
 ```
+
+## How does it work?
+
+This shell script runs every time you building your application. As the result - value of the macros GIT_SHA_VERSION (from GitVersion.h) updates with the SHA1-code of the last branch commit.
 
 ### Why You should add Git versioning?
 
