@@ -1,5 +1,7 @@
 ### Installation Guide
 
+![iOS Git versioning example](https://raw.github.com/siggb/GitVersioningOnXCode/master/screenshot.PNG "iOS Git versioning example")
+
 If you want to add a beauty and powerful versioning to your Mac/iOS-application like __Version 2.17.arfb364__ - please follow these steps:
 
 1. Go to the "Build Phases" -> and choose "Add Build Phase" -> then "Add Run Script Build Phase". You can find this in the top menu - "Editor". Drag script-line to the position after "Target Dependencies".
