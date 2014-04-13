@@ -25,6 +25,9 @@ This shell script runs every time you building your application. As the result -
 ### Why You should add Git versioning to your project?
 
 0. Every version string consists of 2 parts: Bundle Version String (from *.plist) and Git commit SHA1 (you always can find this commit in the repository timeline).
+
 1. You can display your unique app version on the splash screen or on the about screen.
+
 2. When you sending yet another build to your customers or testers, you're not afraid to get lost in application versions. Every bug or wish will be binded with the version code.
+
 3. Your AppStore users can send feedbacks from the special form and every message will be signed with the unique version code.
