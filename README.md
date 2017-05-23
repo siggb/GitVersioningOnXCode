@@ -21,7 +21,7 @@ A few simple steps to make versioning more understandable
 
 This shell script runs every time you building your application. As the result - value of the macros `GIT_SHA_VERSION` (from `GitVersion.h`) updates with the `SHA1-code` of the last branch commit.
 
-### Installation Guide
+## Installation Guide
 
 1. Open `Build Phases` in Xcode
 
@@ -46,7 +46,7 @@ NSString *app_version = [NSString stringWithFormat:@"%@.%@", version, GIT_SHA_VE
 NSLog(@"app_version : %@", app_version);
 ```
 
-### License
+## License
 
 GitVersioningOnXCode is available under the MIT license.
 
