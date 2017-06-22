@@ -43,6 +43,7 @@ This shell script runs every time you building your application. As the result -
 NSDictionary *info = [[NSBundle mainBundle] infoDictionary];
 NSString *version = [info objectForKey:@"CFBundleShortVersionString"];
 NSString *app_version = [NSString stringWithFormat:@"%@.%@", version, GIT_SHA_VERSION];
+
 NSLog(@"app_version : %@", app_version);
 ```
 
